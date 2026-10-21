@@ -1,12 +1,12 @@
 import { StatusBar } from "expo-status-bar";
 import { View, StyleSheet } from "react-native";
-import Challange from "./screen/challange";
+import ProductScreen from "./screen/ProductScreen";
 
 export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="light" />
-      <Challange />
+      < ProductScreen/>
     </View>
   );
 }
