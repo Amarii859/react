@@ -1,19 +1,27 @@
-import { StatusBar } from "expo-status-bar";
-import { View, StyleSheet } from "react-native";
-import ProductScreen from "./screen/ProductScreen";
+/*import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import StackNavigator from './navigator/StackNavigator';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <StatusBar style="light" />
-      < ProductScreen/>
-    </View>
+    <NavigationContainer>
+      {/*<StackNavigator />*//*}
+     /* <BottomTabNavigator/>
+    </NavigationContainer>
+  );
+}*/
+
+
+import React from "react";
+import { StatusBar } from "expo-status-bar";
+import ChallangeScreen from "./screens/ChallangeScreen";
+
+export default function App() {
+  return (
+    <>
+      <StatusBar style="light" backgroundColor="#343E52" />
+      <ChallangeScreen />
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#111",
-  },
-});

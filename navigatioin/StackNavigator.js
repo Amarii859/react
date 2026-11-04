@@ -15,9 +15,20 @@ const MainStackNavigator = ({navigation})=>{
     return(
         <Stack.Navigator screenOption={screenOptionStyle}>
             <Stack.Screen name="Home" component={Home} />
-            <Stack.Screen name="About" component={About} />
+        
         </Stack.Navigator>
     );
-}
 
-export default MainStackNavigator; 
+
+}
+const AboutStackNavigator = ({navigation})=>{
+    return(
+        <Stack.Navigator screenOption={screenOptionStyle}>
+            <Stack.Screen name="about" component={about} />
+        
+        </Stack.Navigator>
+    );
+
+    
+}
+export default {MainStackNavigator , AboutStackNavigator}; 
